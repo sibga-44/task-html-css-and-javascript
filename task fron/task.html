@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <div class="main">
+      <section class="wrapper">
+        <div class="header">
+          <h1>To DO</h1>
+          <button id="moonButton" class="btn theme-btn light" onclick="toggleDarkMode()">
+            <img src="cap.png" alt="moon svg" />
+          </button>
+          <div class="form">
+            <span class="round"></span>
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Create a new todo..."
+            />
+            <button class="add-todo">+</button>
+          </div>
+        </div>
+        <div class="form-2">
+            <ul class="todos">
+              <div class="empty-container">No todo items left!</div>
+            <div class="todo-item" draggable="true">
+              <label class="check-label">
+                <input type="checkbox" />
+                <span class="check-round"></span>
+              </label>
+              <li class="todo"></li>
+              <button class="btn delete">
+                <img src="cross.png" alt="cross svg" />
+              </button>
+            </div>
+          </ul>
+            <div class="actions">
+              <p class="left-items"><span id="count">0</span> items left</p>
+            </div>
+            <div class="filters">
+                <a href="#" class="filter-btns all active">All</a>
+                <a href="#" class="filter-btns live">Active</a>
+                <a href="#" class="filter-btns completed-btn">Completed</a>
+                <a href="#" class="completed-btn">Clear Completed</a>
+              </div>
+          </div>
+         
+          <p class="drag">Drag and drop to reorder list</p>
+
+        
+
+        </div>
+        
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="myscript.js"></script>
+  </body>
+</html>
